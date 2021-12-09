@@ -1,0 +1,49 @@
+Package cie;
+class student
+{
+String usn,name;
+int sem;
+void details()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the usn");
+usn=sc.next();
+System.out.println("enter the name");
+name=sc.next();
+System.out.println("enter the sem");
+sem=sc.nextInt();}
+
+}
+Package cie;
+class internal
+{
+int marks[]=new int[5];
+void entermark()
+{Scanner sc=new Scanner(System.in);
+for(i=0;i<5;i++)
+{
+System.out.println("enter the "+(i+1)+"marks");
+marks[i]=sc.nextInt();}}}
+Package SEE;
+class external extends student
+{
+int seemarks[]=new int[5];
+void enterseemark()
+{Scanner sc=new Scanner(System.in);
+for(i=0;i<5;i++)
+{
+System.out.println("enter the "+(i+1)+"see marks");
+seemarks[i]=sc.nextInt();}}}
+import cie.student;
+import cie.internal;
+import SEE.external;
+public class packtest{
+public static void main(String args[])
+{
+student s=new student();
+internal i=new internal();
+external e=new external();
+s.details();
+i.entermarks();
+e.enterseemarks();
+
